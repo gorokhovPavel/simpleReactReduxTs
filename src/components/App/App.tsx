@@ -8,7 +8,6 @@ function App() {
         <p>Header</p>
       </header>
       <main>
-        <h2></h2>
         <article>
           <h1>Что такое Lorem Ipsum?</h1>
         </article>
