@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "containers";
-import "./global.css";
+import "./App.module.css";
 
 interface IProps {}
 

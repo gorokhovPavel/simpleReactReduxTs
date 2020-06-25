@@ -29,7 +29,6 @@
     "noEmit": true
   },
   "filesGlob": [
-    "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.tsx"
   ],
