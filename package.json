@@ -3,37 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
-    "@babel/preset-react": "^7.10.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.5",
-    "@types/react": "^16.9.26",
-    "@types/react-dom": "^16.9.5",
-    "antd": "^4.3.5",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.6.0",
-    "prettier": "^2.0.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "style-loader": "^1.2.1",
-    "tslint": "^6.1.0",
-    "tslint-react": "^4.2.0",
-    "typescript": "^3.8.3"
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.1",
+    "@testing-library/user-event": "^12.2.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0",
+    "typescript": "^4.0.5",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "start_webpack": "webpack-dev-server --config webpack.config.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged",
+    "eslint": "node_modules/.bin/eslint src/"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -46,5 +41,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": {
+      "*.{js, jsx, ts, tsx}": [
+        "node_modules/.bin/eslint --max-warnings=0",
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "prettier": "^2.1.2"
   }
 }
