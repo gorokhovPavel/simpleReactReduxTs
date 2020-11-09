@@ -1,7 +1,5 @@
 import React from 'react'
 
-const TestComponent = () => <p>просто render</p>
-
  const App = () => {
     return (
         <div className="App">
