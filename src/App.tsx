@@ -5,7 +5,7 @@ export const App: React.FC = () => {
   return (
     <>
       <Page />
-      <h1>Hell111o1</h1>
+      <h1>123</h1>
     </>
   )
 }
