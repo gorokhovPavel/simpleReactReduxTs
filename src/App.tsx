@@ -24,7 +24,7 @@ const app: React.FC = () => {
         <Route component={NotFound}/>
       </Switch>
     </div>
-  );
+  )
 }
 
 
