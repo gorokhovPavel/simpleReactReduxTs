@@ -4,6 +4,7 @@ import {
     ICheckCredentials
 } from './types'
 
+
 export const credentialChecker = (username:string, password:string): ICheckCredentials => {
     if(username === 'Admin' && password === "12345") {
         return {
