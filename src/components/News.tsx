@@ -12,6 +12,7 @@ import {
 
 interface INewsProps extends IStateProps, IDispatchProps {}
 
+
 const news:React.FC<INewsProps> = props => {
 
     React.useEffect(() => {
