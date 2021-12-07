@@ -41,5 +41,4 @@ const reducer = (state=initialState, action: IActionTypes): IReducerState => {
             return state;
     }
 }
-
 export default reducer;
