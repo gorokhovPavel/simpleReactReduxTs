@@ -9,6 +9,7 @@ import {
     STORE_NEWS
 } from '../store/types';
 
+
 interface INewsProps extends IStateProps, IDispatchProps {}
 
 const news:React.FC<INewsProps> = props => {
