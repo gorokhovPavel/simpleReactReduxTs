@@ -1,6 +1,6 @@
 
 This is a basic example of spa with home, news, profile and login pages.
-Mock login details:
+Mock login details
 ```
 username: Admin
 password: 12345
