@@ -17,9 +17,6 @@ password: 12345
 ## Instructions
 
 ```
-npm install
+npm install && npm start
 ```
-and then
-```
-npm start
 ```
