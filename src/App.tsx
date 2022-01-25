@@ -25,5 +25,4 @@ const app: React.FC = () => {
   )
 }
 
-
 export default app
