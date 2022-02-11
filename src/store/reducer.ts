@@ -13,6 +13,7 @@ const initialState:IReducerState = {
     news: []
 }
 
+
 const reducer = (state=initialState, action: IActionTypes): IReducerState => {
     switch(action.type){
             
