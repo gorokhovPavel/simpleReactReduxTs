@@ -7,6 +7,7 @@ import {
     IActionTypes
 } from './types'
 
+
 const initialState:IReducerState = {
     authenticated: false,
     loginError: false,
