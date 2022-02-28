@@ -24,5 +24,4 @@ const app: React.FC = () => {
     </div>
   )
 }
-
 export default app
