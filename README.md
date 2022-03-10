@@ -5,7 +5,6 @@ Mock login details
 username: Admin
 password: 12345
 ```
-
 ## Project progress
 
 - [x] implemented base functionality
