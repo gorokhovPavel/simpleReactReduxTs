@@ -10,7 +10,6 @@ export const credentialChecker = (username:string, password:string): ICheckCrede
             type: SUCCESSFUL_LOGIN
         }
     } else {
-
         return {
             type: UNSUCCESSFUL_LOGIN
         }
