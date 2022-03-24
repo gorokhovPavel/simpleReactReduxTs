@@ -21,6 +21,7 @@ const app: React.FC = () => {
         <Route path='/login' component={Login}/>
         <Route path='/profile' component={Profile}/>
         <Route component={NotFound}/>
+        
       </Switch>
     </div>
   )
