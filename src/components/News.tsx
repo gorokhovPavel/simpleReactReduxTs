@@ -46,7 +46,6 @@ interface IStateProps {
     news: INewsItem[]
 }
 
-
 const mapStateToProps = (state: IReducerState): IStateProps => {
     return {
         news: state.news
