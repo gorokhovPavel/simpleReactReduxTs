@@ -10,6 +10,7 @@ import {
 } from '../store/types';
 
 
+
 interface INewsProps extends IStateProps, IDispatchProps {}
 
 
