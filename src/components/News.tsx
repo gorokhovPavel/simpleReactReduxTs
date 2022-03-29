@@ -11,7 +11,6 @@ import {
 
 interface INewsProps extends IStateProps, IDispatchProps {}
 
-
 const news:React.FC<INewsProps> = props => {
 
     React.useEffect(() => {
@@ -53,7 +52,6 @@ const mapStateToProps = (state: IReducerState): IStateProps => {
         news: state.news
     }
 };
-
 
 interface IDispatchProps {
     onGetNews: (newsData:INewsItem[]) => { type: string; payload: INewsItem[]; }
