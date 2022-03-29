@@ -9,8 +9,6 @@ import {
     STORE_NEWS
 } from '../store/types';
 
-
-
 interface INewsProps extends IStateProps, IDispatchProps {}
 
 
