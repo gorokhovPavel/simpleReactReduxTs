@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { IReducerState } from '../store/types'
 
-
-
 const profile:React.FC<IStateToProps> = (props) => {
 
     let authCheck: JSX.Element|null = null;
