@@ -26,7 +26,7 @@ const app: React.FC = () => {
   )
 }
 
-/** Хук для отслеживания изменения размеров экрана (длины) */
+/** Хук для отслеживания изменения размеров экрана (длины)  */
 export const useWindowTypeSize = ()=> {
     const [size, setSize] = useState(0);
 
