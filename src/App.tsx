@@ -27,5 +27,35 @@ const app: React.FC = () => {
   )
 }
 
+/** Хук для отслеживания изменения размеров экрана (длины) */
+export const useWindowTypeSize = ()=> {
+    const [size, setSize] = useState(0);
+
+    useEffect(() => {
+        const updateSize = ()=> {
+            setSize(window.innerWidth);
+        }
+
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);
+
+    /** Сопоставляет тип экрана по его размеру */
+    const getComparisonSizeByType = (): EWindowWidthType => {
+       if(size <= MOBILE_WIDTH_SIZE){
+           return EWindowWidthType.MOBILE
+       } else if(size > MOBILE_WIDTH_SIZE && size <= SMALL_TABLET_WIDTH_SIZE) {
+           return EWindowWidthType.SMALL_TABLET
+       } else if(size > SMALL_TABLET_WIDTH_SIZE && size <= BIG_TABLET_WIDTH_SIZE) {
+           return EWindowWidthType.BIG_TABLET
+       } else if(size > BIG_TABLET_WIDTH_SIZE && size <= DESKTOP_WIDTH_SIZE) {
+            return EWindowWidthType.SMALL_DESKTOP
+       } else
+           return EWindowWidthType.BIG_DESKTOP
+    }
+
+    return getWindowSizesByTypes(getComparisonSizeByType())
+}
 
 export default app
