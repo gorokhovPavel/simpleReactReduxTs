@@ -14,8 +14,7 @@ const initialState:IReducerState = {
 }
 
 const reducer = (state=initialState, action: IActionTypes): IReducerState => {
-    switch(action.type){
-            
+    switch(action.type) {
         case SUCCESSFUL_LOGIN:
             return {
                 ...state,
