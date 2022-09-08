@@ -22,6 +22,7 @@ const reducer = (state=initialState, action: IActionTypes): IReducerState => {
                 authenticated: true,
                 loginError: false
             };
+
         case UNSUCCESSFUL_LOGIN:
             return {
                 ...state,
