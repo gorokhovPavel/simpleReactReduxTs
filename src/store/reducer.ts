@@ -39,6 +39,7 @@ const reducer = (state=initialState, action: IActionTypes): IReducerState => {
                 ...state,
                 news: action.payload
             }
+
         default:
             return state;
     }
