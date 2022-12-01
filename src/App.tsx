@@ -30,7 +30,6 @@ const app: React.FC = () => {
 export const useWindowTypeSize = ()=> {
     const [size, setSize] = useState(0);
 
-
     useEffect(() => {
         const updateSize = ()=> {
             setSize(window.innerWidth);
